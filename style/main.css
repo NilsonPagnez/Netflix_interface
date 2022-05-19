@@ -21,6 +21,7 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
 }
 
@@ -45,12 +46,13 @@ header nav a:hover{
 
 /*filme principal*/
 
-.filme_principal{
+.jogo_principal{
     font-size: 20px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/Capa_TW.jpg');
-
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/rdr2.jpg');
+    background-position: ;
     height: 500px;
     background-size: cover;
+    
 
     display: flex;
     flex-direction: column;
@@ -58,10 +60,50 @@ header nav a:hover{
     align-items: flex-start;
 
 }
-.filme_principal .descricao{
+.jogo_principal .descricao{
     margin-bottom: 40px;
+    margin-top: 10px;
+    text-align: justify;
+   
+    
 }
 
 .titulo{
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    transition: .3s ease all;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.jogo_principal .container{
+    width: 70%;
+    
+}
+
+
+
+/*lembrar de transformar netflix em gameflix pra dar uma diferenciada no projeto*/
