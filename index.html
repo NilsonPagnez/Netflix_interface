@@ -7,6 +7,9 @@
     <title>NETFLIX CLONE</title>
     <link rel="stylesheet" href="style/main.css">
 
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
 <!--owl css-->
 <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
 <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
@@ -31,10 +34,10 @@
            <div class="container">
                <h3 class="titulo">RED DEAD REDEMPTION 2</h3>
                <p class="descricao">Red Dead Redemption 2, a épica aventura de mundo aberto da Rockstar Games aclamada pela crítica e o jogo mais bem avaliado desta geração de consoles, agora chega aprimorado para PC com conteúdos inéditos no Modo História, melhorias visuais e muito mais.</p>
-                <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fa-solid fa-play"></i>
-                         ASSISTIR AGORA
+                <div class="botoes" >
+                    <button role="button" class="botao botao_1">
+                        <i class="fa-solid fa-play "></i>
+                         ASSISTIR TRAILER
                    </button>
                    <button role="button" class="botao">
                     <i class="fa-solid fa-circle-info"></i>
@@ -43,11 +46,63 @@
                 </div>
         </div>
        </div>
+
+       <div class="container">
+           <div class="popup_video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gmA6MrX81z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+           </div>
+       </div>
     </main>
 
+    <div class="carrossel-jogos">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-jogo" src="img/Bioshock.png" alt="">
+            </div>
+            <div class="item">
+                <img class="box-jogo" src="img/Dark-Souls-3-Free-Download-By-Steam-repacks.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-jogo" src="img/devilmaycry5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-jogo" src="img/SEA.jpg">
+            </div>
+            <div class="item">
+                <img class="box-jogo" src="img/GTAIV.png" alt="">
+            </div>
+            <div class="item">
+                <img class="box-jogo" src="img/BORDERLANDS3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-jogo" src="img/The_Witcher_3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-jogo" src="img/COD_MW.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-jogo" src="img/farcry6.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelectorAll('.botao_1').forEach(vid => {
+            vid.onclick = () =>{
+                document.querySelector('.popup_video').style.display = 'block' ;
+
+            }
+           
+
+        });
+    </script>
     <script src="https://kit.fontawesome.com/a76370940e.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>    
-    <script src="js/owl/owl.carousel.min.js"></script>    
+    <script src="js/owl/owl.carousel.min.js"></script>   
+    <script src="js/owl/setup.js"></script> 
 
 
 </body>

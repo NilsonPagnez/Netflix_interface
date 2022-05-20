@@ -13,7 +13,7 @@
 
 body {
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'arial', Times, serif;
     color: white;
 }
 
@@ -49,7 +49,7 @@ header nav a:hover{
 .jogo_principal{
     font-size: 20px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/rdr2.jpg');
-    background-position: ;
+    background-position-y: px;
     height: 500px;
     background-size: cover;
     
@@ -89,11 +89,37 @@ header nav a:hover{
     background-color: white;
     color: black;
     transition: .3s ease all;
+    transform: scale(1.1);
 }
 
 .botao i{
     margin-right: 8px;
+    
 }
+
+.container .popup_video{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 100;
+    background: rgba(0,0,0, .8);
+    height: 100%;
+    width: 100%;
+    display: none;
+
+
+}
+.container .popup_video iframe{
+    position: absolute;
+    width: 750px;
+    height: 422px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 3px solid #fff
+    
+
+}
+
 
 .container{
     margin-left: 20px;
@@ -103,6 +129,17 @@ header nav a:hover{
     width: 70%;
     
 }
+
+.box-jogo{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carrosel-jogos{
+    margin-top: 5px;
+}
+
 
 
 
