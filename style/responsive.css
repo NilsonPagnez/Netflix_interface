@@ -7,6 +7,12 @@
 
     }
 
+    .container .popup_video .close{
+        display: flex;
+        right: 44%;
+    
+    }
+
     
     header .container {
         display: flex;

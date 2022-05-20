@@ -47,15 +47,14 @@
         </div>
        </div>
 
-       <div class="container">
-           <div class="popup_video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gmA6MrX81z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <!--video trailer-->
 
-           </div>
-       </div>
+        
     </main>
 
     <div class="carrossel-jogos">
+        <div class="container"> <h3 class="classificacao_1">Jogos de ação</h3></div>
+       
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img class="box-jogo" src="img/Bioshock.png" alt="">
@@ -89,16 +88,40 @@
     </div>
 
 
+    <div class="container">
+        <div class="popup_video">
+            <span class="close">&#10006;</span>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gmA6MrX81z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    
+    </div>       
+    <!--Coloquei o video no botão 'assistir trailer'-->
     <script>
         document.querySelectorAll('.botao_1').forEach(vid => {
             vid.onclick = () =>{
-                document.querySelector('.popup_video').style.display = 'block' ;
-
+                document.querySelector('.popup_video').style.display = 'flex';
+                
             }
-           
-
         });
+
+        document.querySelector('.close').addEventListener('click', function() {
+            document.querySelector('.popup_video').style.display = 'none';
+        })
+
+        
+
     </script>
+  
+
+
+
+    </script>
+
+     
+
+
+
+
     <script src="https://kit.fontawesome.com/a76370940e.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>    
     <script src="js/owl/owl.carousel.min.js"></script>   
