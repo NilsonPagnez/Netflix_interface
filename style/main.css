@@ -30,18 +30,35 @@ header .logo {
     font-family: 'Arial Black', Times;
     font-size: 40px;
     margin-left: 10px;
+    transition: 0.3s ease-in-out;
     
 }
 
 header .logo:hover{
     transform: scale(1.1);
-    transition: 0.4s ease all;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
+    text-shadow: 0 0 5px var(--vermelho);
    
 
 
 
     
+}
+
+header nav a i:hover{
+    border-color: white;
+    
+
+
+}
+
+
+header nav a i{
+    padding: 10px;
+    border: 2px solid #aaa;;
+    border-radius: 100%;
+
 }
 
 header nav a{
@@ -50,20 +67,22 @@ header nav a{
     font-family:'Arial Black', Times;
     margin-right: 25px;
     font-size: 20px;
+    
 }
 
 header nav a:hover{
     color: #fff;
 }
 
-/*filme principal*/
-
+/*jogo principal*/
 .jogo_principal{
     font-size: 20px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/rdr2.jpg');
     background-position-y: px;   
     height: 500px;
     background-size: cover;
+
+
     
 
     display: flex;
@@ -72,6 +91,8 @@ header nav a:hover{
     align-items: flex-start;
 
 }
+
+
 .jogo_principal .descricao{
     margin-bottom: 40px;
     margin-top: 10px;
@@ -95,13 +116,14 @@ header nav a:hover{
     margin-right: 25px;
     font-size: 12px;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
 
 }
 
 .botao:hover{
     background-color: white;
     color: black;
-    transition: .3s ease all;
+    transition: 0.3s ease-in-out;
     transform: scale(1.1);
 }
 
@@ -182,9 +204,14 @@ header nav a:hover{
     
 }
 
+.item{
+    transition: 0.3s ease-in-out;
+    
+}
+
 .item:hover{
     transform: scale(1.1);
-    transition: 0.4s ease all;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
 
 
