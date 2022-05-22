@@ -38,8 +38,7 @@ header .logo:hover{
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
     cursor: pointer;
-    text-shadow: 0 0 5px var(--vermelho);
-   
+    text-shadow: 0 0 3px var(--vermelho)
 
 
 
