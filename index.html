@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,13 @@
     <!--responsividade-->
     <link rel="stylesheet" href="style/responsive.css">
 
-<!--owl css-->
-<link rel="stylesheet" href="style/owl/owl.carousel.min.css">
-<link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 
 
 </head>
+
 <body cl>
     <header>
         <div class="container">
@@ -25,37 +27,42 @@
                 <a href="#">Loja</a>
                 <a href="#">Seus Jogos</a>
                 <a href="#">Amigos</a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
             </nav>
         </div>
     </header>
 
     <main>
-       <div class="jogo_principal">
-           <div class="container">
-               <h3 class="titulo">RED DEAD REDEMPTION 2</h3>
-               <p class="descricao">Red Dead Redemption 2, a épica aventura de mundo aberto da Rockstar Games aclamada pela crítica e o jogo mais bem avaliado desta geração de consoles, agora chega aprimorado para PC com conteúdos inéditos no Modo História, melhorias visuais e muito mais.</p>
-                <div class="botoes" >
+        <div class="jogo_principal">
+            <div class="container">
+                <h3 class="titulo">RED DEAD REDEMPTION 2</h3>
+                <p class="descricao">Red Dead Redemption 2, a épica aventura de mundo aberto da Rockstar Games aclamada
+                    pela crítica e o jogo mais bem avaliado desta geração de consoles, agora chega aprimorado para PC
+                    com conteúdos inéditos no Modo História, melhorias visuais e muito mais.</p>
+                <div class="botoes">
                     <button role="button" class="botao">
                         <i class="fa-solid fa-gamepad"></i>
-                           JOGAR
-                       </button>
+                        JOGAR
+                    </button>
                     <button role="button" class="botao botao_1">
                         <i class="fa-solid fa-play "></i>
-                         ASSISTIR TRAILER
-                   </button>
-                
+                        ASSISTIR TRAILER
+                    </button>
+
                 </div>
+            </div>
         </div>
-       </div>
 
-       <!--video trailer-->
+        <!--video trailer-->
 
-        
+
     </main>
 
     <div class="carrossel-jogos">
-        <div class="container"> <h3 class="classificacao_1">Jogos de Ação</h3></div>
-       
+        <div class="container">
+            <h3 class="classificacao_1">Jogos de Ação</h3>
+        </div>
+
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img class="box-jogo" src="img/Bioshock.png" alt="">
@@ -118,42 +125,46 @@
     <div class="container">
         <div class="popup_video">
             <span class="close">&#10006;</span>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gmA6MrX81z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-    
-    </div>       
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gmA6MrX81z4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
     <!--Coloquei o video no botão 'assistir trailer'-->
     <script>
         document.querySelectorAll('.botao_1').forEach(vid => {
-            vid.onclick = () =>{
+            vid.onclick = () => {
                 document.querySelector('.popup_video').style.display = 'flex';
-                
+
             }
         });
 
-        document.querySelector('.close').addEventListener('click', function() {
+        document.querySelector('.close').addEventListener('click', function () {
             document.querySelector('.popup_video').style.display = 'none';
         })
 
-        
-
-    </script>
-  
-
 
 
     </script>
 
-     
+
+
+
+    </script>
+
+
 
 
 
 
     <script src="https://kit.fontawesome.com/a76370940e.js" crossorigin="anonymous"></script>
-    <script src="js/owl/jquery.min.js"></script>    
-    <script src="js/owl/owl.carousel.min.js"></script>   
-    <script src="js/owl/setup.js"></script> 
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 
 
 </body>
+
 </html>

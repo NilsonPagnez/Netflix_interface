@@ -33,11 +33,23 @@ header .logo {
     
 }
 
+header .logo:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease all;
+    cursor: pointer;
+   
+
+
+
+    
+}
+
 header nav a{
     text-decoration: none;
     color: #aaa;
     font-family:'Arial Black', Times;
-    margin-right: 10px;
+    margin-right: 25px;
+    font-size: 20px;
 }
 
 header nav a:hover{
@@ -172,7 +184,6 @@ header nav a:hover{
 
 .item:hover{
     transform: scale(1.1);
-    border: 10px white;
     transition: 0.4s ease all;
     cursor: pointer;
 
