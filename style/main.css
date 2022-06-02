@@ -21,6 +21,7 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
     
 
 }
@@ -45,8 +46,12 @@ header .logo:hover{
     
 }
 
+
+
 header nav a i:hover{
     border-color: white;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
     
 
 
@@ -57,6 +62,8 @@ header nav a i{
     padding: 10px;
     border: 2px solid #aaa;;
     border-radius: 100%;
+    transition: 0.5s ease-in-out;
+    
 
 }
 
@@ -66,11 +73,14 @@ header nav a{
     font-family:'Arial Black', Times;
     margin-right: 25px;
     font-size: 20px;
+    transition: 0.3s ease-in-out;
     
 }
 
 header nav a:hover{
     color: #fff;
+    font-size: 22px;
+    transition: 0.3s ease-in-out;
 }
 
 /*jogo principal*/
@@ -214,6 +224,45 @@ header nav a:hover{
     cursor: pointer;
 
 
+}
+
+
+footer .container{
+    margin: 80px ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+footer .h3{
+    
+
+}
+
+.social{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    
+    
+}
+
+.social a{
+    color: #aaa;
+    margin: 0px 0px;
+    font-size: 30px;
+    
+    padding: 0 30px;
+    
+}
+.github{
+    border: #aaa solid 2px;
+    border-top-color: #141414;
+    border-bottom: #141414;
 }
 
 
